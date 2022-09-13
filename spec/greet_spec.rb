@@ -1,5 +1,6 @@
 require 'greet'
-describe 'greet' do 
+
+Rspec.describe 'greet method' do 
     it 'greets Sarita' do 
         expect(greet("Sarita")).to eq "Hello Sarita!"
   end 
