@@ -1,7 +1,10 @@
 def encode(plaintext, key)
-  cipher = key.chars.uniq + (('a'..'z').to_a - key.chars) # "'a'...'z'"" => "'a'..'z'""
-  ciphertext_chars = plaintext.chars.map do |char|        
+  cipher = key.chars.uniq + (('a'...'z').to_a - key.chars) # "'a'...'z'"" => "'a'..'z'""
+  ciphertext_chars = plaintext.chars.map do |char|     
+    p char
+    p cipher.find_index(char)
     (65 + cipher.find_index(char)).chr # Initial failure in the code, z has nil index value
+   
   end
   return ciphertext_chars.join
 end
