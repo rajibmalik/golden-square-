@@ -23,20 +23,6 @@ class TaskTracker
   
   def complete(task) # `completes` a task that has been added 
   # Fails if the task does not exist in the task list 
-  end 
-end 
-
-## 3. Create Examples as Tests
-
-# 1 No task added 
-
-task_tracker = TaskTracker.new 
-todo_list.list => []
-
-# 2 Adding a single task 
-
-task_tracker = TaskTracker.new 
-todo_list.add("Clean room")
 todo_list.list => ["Clean room"]
 
 # 3 Adding multiple tasks 
@@ -48,16 +34,6 @@ todo_list.list => ["Clean room", "Clean car"]
 
 # 4 Completing a task 
 
-task_tracker = TaskTracker.new 
-task_tracker.add("Clean room")
-task_tracker.add("Clean car")
-task_tracker.complete("Clean room")
-task_tracker.list => ["Clean car"]
-
-# 4 Completing a task that doesn't exist 
-
-task_tracker = TaskTracker.new 
-task_tracker.add("Clean room")
 task_tracker.complete("Clean car")
 task_tracker.list => fails "No such task"
 

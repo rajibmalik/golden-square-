@@ -1,0 +1,28 @@
+Integration Tests 
+
+# 1 - Adds a diary entry 
+
+# 2 - Returns a list of the diary entries 
+
+# 3 - Returns the number of words in all diary entries 
+
+# 4 - Returns an estimated reading time 
+
+# 5 - Returns a diary entry closest to what the reader 
+#     is able to read in a given time
+
+Single unit tests 
+
+# 1 - Returns title as a string 
+
+# 2 - Returns content as a string 
+
+# 3 - Returns the number of words in the contents
+
+# 4 - Returns the users estimated WPM input 
+
+# 5 - Returns a string with a chunk of contents 
+# user can read in their reading time 
+
+# 6 - Returns the next chunk of contents the user 
+# can read in their reading time ... 
