@@ -121,7 +121,7 @@ diary.add(diary_entry_2)
 diary.add(diary_entry_3)
 expect(diary_reader.find_best_readable_chunk(1)).to eq diary_entry_2
 
-# 2 - An imperfect match when finding the best readable chunk
+# 3 - An imperfect match when finding the best readable chunk
 
 diary = Diary.new 
 diary_reader = DiaryReader.new(2, diary)
@@ -133,7 +133,7 @@ diary.add(diary_entry_2)
 diary.add(diary_entry_3)
 expect(diary_reader.find_best_readable_chunk(3)).to eq diary_entry_3
 
-# 3 - Creating multiple todos and listing them
+# 4 - Creating multiple todos and listing them
 
 todo_list = TodoList.new
 todo_1 = Todo.new("Title 1")
@@ -144,7 +144,7 @@ todo_list.add(todo_2)
 todo_list.add(todo_3)
 expect(todo_list.list_todo_.to eq [todo_1, todo_2, todo_3]
 
-# 4 - Find all unique phone numbers found within all diary entries 
+# 5 - Find all unique phone numbers found within all diary entries 
 =begin
 As a user
 So that I can keep track of my contacts
